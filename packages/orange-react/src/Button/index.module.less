@@ -1,0 +1,162 @@
+@import '../index.module.less';
+
+
+
+// 默认配置
+.o-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: @--o-button-default;
+    border: 1px solid #ccc;
+    color: #999999;
+    &:hover{
+        color: @--mian-color;
+        border: 1px solid @--mian-color;
+    }
+    &:disabled{
+        color: #999999;
+        cursor:no-drop;
+        border: 1px solid transparent;
+    }
+}
+.o-button-radius{
+    border-radius: 0.5em;
+}
+
+// 小
+.o-button-small{
+    min-width: 2em;
+    min-height: 2em;
+}
+
+// 中
+.o-button-middle{
+    min-width: 4em;
+    min-height: 3em;
+}
+
+// 大
+.o-button-large{
+    min-width: 6em;
+    min-height: 4em;
+}
+
+// primary
+.o-button-primary{
+    background: @--o-button-primary;
+    border: 1px solid @--o-button-primary;
+    color: white;
+    &:hover{
+        color: white;
+        background: fade(@--o-button-primary, 80%);
+        border: 1px solid @--o-button-primary;
+    }
+    &:disabled{
+        color: white;
+        cursor:no-drop;
+        background: fade(@--o-button-primary, 60%);
+        border: 1px solid transparent;
+    }
+}
+
+// success
+.o-button-success{
+    background: @--o-button-success;
+    border: 1px solid @--o-button-success;
+    color: white;
+    &:hover{
+        color: white;
+        background: fade(@--o-button-success, 80%);
+        border: 1px solid @--o-button-success;
+    }
+    &:disabled{
+        color: white;
+        cursor:no-drop;
+        background: fade(@--o-button-success, 60%);
+        border: 1px solid transparent;
+    }
+}
+
+// warning
+.o-button-warning{
+    background: @--o-button-warning;
+    border: 1px solid @--o-button-warning;
+    color: white;
+    &:hover{
+        color: white;
+        background: fade(@--o-button-warning, 80%);
+        border: 1px solid @--o-button-warning;
+    }
+    &:disabled{
+        color: white;
+        cursor:no-drop;
+        background: fade(@--o-button-warning, 60%);
+        border: 1px solid transparent;
+    }
+}
+
+// danger
+.o-button-danger{
+    background: @--o-button-danger;
+    border: 1px solid @--o-button-danger;
+    color: white;
+    &:hover{
+        color: white;
+        background: fade(@--o-button-danger, 80%);
+        border: 1px solid @--o-button-danger;
+    }
+    &:disabled{
+        color: white;
+        cursor:no-drop;
+        background: fade(@--o-button-danger, 60%);
+        border: 1px solid transparent;
+    }
+}
+// text
+.o-button-text{
+    border: 0px solid transparent;
+    color: #909399;
+    &:hover{
+        background: fade(@--mian-color, 20%);
+        border: 0px solid transparent;
+    }
+    &:disabled{
+        cursor:no-drop;
+        background: rgba(255, 255, 255, 0.6);
+        border: 0px solid transparent;
+    }
+}
+
+
+// 字体图标
+
+@font-face {
+    font-family: iconfont;
+    src: url(../Icon/assets/iconfont.ttf);
+}
+
+// loading
+.o-button-loading{
+    width: 28px;
+    height: 16px;
+    position: relative;
+    &:before {
+        content: '\e891'; 
+        position: absolute;
+        font-size: 16px;
+        left: 5px;
+        right: 5px;
+        font-family: 'iconfont' !important;
+        font-style: normal;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        animation: loading 1s linear  infinite;
+    }
+}
+
+@keyframes loading {
+    100% {
+        transform: rotate(360deg);
+    }
+}
