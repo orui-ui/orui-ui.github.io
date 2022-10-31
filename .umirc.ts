@@ -21,41 +21,6 @@ export default defineConfig({
   history: {
     type: 'browser',
   },
-  menus: {
-    // '/components': [
-    //   {
-    //     title: '按钮 Button',
-    //     path: '/components/button'
-    //   },
-    //   {
-    //     title: '通用',
-    //     children: [
-    //       '',
-    //       {
-    //         title: '按钮 Button',
-    //         path: '/components/button'
-    //       }
-    //     ]
-    //   }
-    // ]
-    // ,
-    // '/en-US/components': [
-    //   {
-    //     title: '按钮 Button',
-    //     path: '/button'
-    //   },
-    //   {
-    //     title: '通用',
-    //     children: [
-    //       '',
-    //       {
-    //         title: '按钮 Button',
-    //         path: '/button'
-    //       }
-    //     ]
-    //   }
-    // ]
-  },
   navs: {
     'zh-CN': [
       {

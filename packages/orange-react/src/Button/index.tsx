@@ -42,7 +42,7 @@ interface ButtonProps {
     /**
      * @description 按钮点击回调事件
      */
-    onClick?: Function | undefined;
+    onClick: Function ;
 }
 
 
@@ -70,11 +70,11 @@ const Button: FC <ButtonProps & NativeButtonProps> = memo((props) => {
                 }
                 style={style}
                 disabled={disabled}
-                onClick={ () => {
+                onClick={ (event) => {
                     if(loading){
                         return
                     }
-                    onClick as undefined
+                    if(typeof onClick === 'function') onClick(event)
                 }}>
                 {loading && <div className='o-button-loading'></div>}
                 {children}

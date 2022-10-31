@@ -1,13 +1,22 @@
 
-import React from "react";
+import React, { useCallback, useState } from "react";
 import { Button } from "orange-ui"
 
 export default () => {
+
+    let [loadingState, setLoadingState] = useState(false);
+
+    let handeClick = () => {
+        setLoadingState(true)
+        console.log(loadingState)
+    }
+
     return (
         <>
            <div style={{display: 'flex'}}>
-                <Button type="default" loading> default</Button>
-
+                <Button type="default" loading={loadingState} 
+                onClick={(event: any) => handeClick()}> default - 点击开启loading</Button>
+            
                 <div style={{width: '20px'}}></div>
                 <Button type="primary" size="middle" loading> primary</Button>
                 

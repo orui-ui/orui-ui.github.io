@@ -13,9 +13,21 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
-// 图标
-.o-icon-loading {
-    &::before{
-        content: '\e891';
+// 旋转
+.o-icon-spin{
+    animation: icon-spin 1s linear infinite;
+}
+
+@keyframes icon-spin {
+    100% {
+        transform: rotate(360deg);
     }
 }
+
+
+
+// 图标
+.o-icon-loading::before{
+    content: '\e891';
+}
+

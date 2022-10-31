@@ -12,7 +12,7 @@ export default () => {
                 <Button type="primary" size="middle"> primary</Button>
                 
                 <div style={{width: '20px'}}></div>
-                <Button type="success" size="large" radius> success</Button>
+                <Button type="success" size="large" radius onClick={() => alert('this is a button')}> success</Button>
 
                 <div style={{width: '20px'}}></div>
                 <Button type="warning" width="200px"> waring - custom size</Button>

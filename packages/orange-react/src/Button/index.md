@@ -5,12 +5,9 @@ nav:
   title: 组件
   path: /components
 group:
-  title: 通用
+  title: 基础组件
 ---
 
-组件 / 通用
-
----
 
 ## 按钮 Button
 
