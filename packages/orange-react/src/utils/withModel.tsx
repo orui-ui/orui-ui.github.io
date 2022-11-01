@@ -5,25 +5,27 @@ import React, { forwardRef, useMemo, useCallback, useEffect } from 'react'
 
 // const withModel = (component) => {}
 
-const withModel = (Component) => forwardRef((props, outerRef) => {
+const withModel = (Component: any) => forwardRef((props, outerRef) => {
 
-    console.log(props, outerRef)
+    const p =  {
+      models: [],
+      name: '',
+      value: '',
+      onChange: (event: any) => {},
+      ...props,
+    } 
+    
+    const { models = [], name, value, onChange, ...other } = p;
 
-    const {
-        models = [],
-        name,
-        value,
-        onChange,
-        ...other
-      } = props;
     const [modelValue, setModelValue] = useMemo(() => models, [models])
     
     const handleChange = useCallback((event: any) => {
-        if (setModelValue) {
-        setModelValue(event.target.value)
-        }
+          if (setModelValue) {
+              const setValue = setModelValue as Function;
+              setValue(event.target.value)
+          }
         
-        if(typeof onChange === 'function') onChange(event)
+          if(typeof onChange === 'function') onChange(event)
     }, [onChange])
 
   return (

@@ -1,37 +1,29 @@
 
-import React, { FC, forwardRef, memo } from "react";
+import React, { forwardRef } from "react";
+import './index.module.less';
 
 import withModel from '../utils/withModel'
 
 
-
-// interface InputProps extends HTMLInputElement {
-//     /**
-//      * @description 双向绑定
-//      */
-//     models: String | Boolean | Number;
-// }
-
-// const ax: FC <InputProps> = memo(()=>{
-//     return (
-//         <>
-            
-//         </>
-//     )
-// })
-
-type Props = React.DetailedHTMLProps<
+type inputProps = React.DetailedHTMLProps<
   React.InputHTMLAttributes<HTMLInputElement>,
   HTMLInputElement
 >
 
-const Component = forwardRef<HTMLInputElement, Props>((props, outerRef) => {
+const Component = forwardRef<HTMLInputElement, inputProps>((props, outerRef) => {
 
+    const p = {...props};
     let { type } = props;
     
     if(!type) type = 'text';
     
-    let element = <input ref={outerRef} {...props} />
+    // 删除部分属性
+    let {size = 'small'} = p;
+
+
+    let element = <input className={
+        `o-input o-input-border ${['small', 'middle', 'large'].includes(size as string) ? 'o-input-' + size : ''}`
+    } ref={outerRef} {...props} />
 
     return (
         <>

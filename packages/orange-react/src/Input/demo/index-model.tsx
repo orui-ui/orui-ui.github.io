@@ -3,7 +3,7 @@ import { Input } from "orange-ui"
 
 export default () => {
 
-    const data = useState('1')
+    const data = useState('我是输入的内容')
 
     return (
         <>
