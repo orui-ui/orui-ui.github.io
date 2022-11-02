@@ -12,7 +12,7 @@ interface InputProps {
      * @description 类型
      * @default text
      */
-    text?: String;
+    type?: String;
     /**
      * @description 最大输入长度
      */
@@ -29,6 +29,16 @@ interface InputProps {
      * @description 尺寸 small、 middle、 large
      */
     size?: String;
+     /**
+     * @description 清空按钮显示状态
+     * @default false
+     */
+    clearable?: boolean;
+    /**
+     * @description 密码可示状态
+     * @default true
+     */
+    showPassword?: boolean;
 }
 
 const InputApi: FC <InputProps> = memo(()=>{

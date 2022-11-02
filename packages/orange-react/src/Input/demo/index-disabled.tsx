@@ -7,7 +7,7 @@ export default () => {
 
     return (
         <>
-            <Input placeholder="Please input"  />
+            <Input placeholder="Please input" disabled  />
         </>
     )
 }

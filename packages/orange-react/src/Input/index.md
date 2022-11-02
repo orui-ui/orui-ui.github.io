@@ -24,11 +24,29 @@ group:
 
 ### 禁用
 
+通过`disabled`实现禁用状态
+
 <code src="./demo/index-disabled.tsx" />
 
 ### 双向绑定
 
+使用 `models` 可以实现数据的双向绑定
+
 <code src="./demo/index-model.tsx" />
+
+## 一键清空
+
+使用`clearable`属性即可得到一个可一键清空的输入框
+
+<code src="./demo/index-empty.tsx" />
+
+## 密码框
+
+当`type` 为 `password` 时，输入框右侧会显示一个眼睛按钮，默认开启，可以通过`showPassword` 关闭会开启。
+<code src="./demo/index-password.tsx" />
+## 带图标的输入框
+
+## 文本域
 
 <!-- API说明 -->
 <API src="./index-api.tsx" />

@@ -7,9 +7,11 @@ export default () => {
 
     return (
         <>
-            <Input placeholder="Please input" size="small" />
-            <Input placeholder="Please input" size="middle" />
-            <Input placeholder="Please input" size="large" />
+            <div style={{display: 'flex'}}>
+                <Input placeholder="Please input" size="small" />
+                <Input placeholder="Please input" size="middle" />
+                <Input placeholder="Please input" size="large" />
+            </div>
         </>
     )
 }

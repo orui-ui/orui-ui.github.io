@@ -20,7 +20,7 @@ interface IconProps {
      * @description 图标大小
      * @default 2em
      */
-    size: String | Number;
+    size?: String | Number;
     /**
      * @description 颜色
      * @default 2em
@@ -28,8 +28,9 @@ interface IconProps {
      color?: String;
     /**
      * @description 旋转
+     * @default false
      */
-    spin:Boolean;
+    spin?:Boolean;
     /**
      * @description 点击事件
      */
@@ -38,7 +39,7 @@ interface IconProps {
 
 const Icon : FC<IconProps> = memo ( props => {
 
-    const {className, style, name, size, spin, color } = props;
+    const {className, style, name, size, spin, color, onClick } = props;
 
     // 大小
     let iconSize = '2em';
@@ -52,13 +53,17 @@ const Icon : FC<IconProps> = memo ( props => {
 
     // 颜色
     let iconColor = '';
-    if(size !== undefined){
-        iconColor = size as string;
+    if(color !== undefined){
+        iconColor = color as string;
     }
     
     return (
         <>
-            <div >
+            <div onClick={
+                (event)=>{
+                    if(typeof onClick === 'function') onClick(event)
+                }
+            }>
                 {
                     !spin && <i className={'o-icon' + ' ' + 'o-icon-' + name + ` ${className ? className : ''}`} style={{
                         fontSize: iconSize,

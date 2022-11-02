@@ -12,10 +12,11 @@ const withModel = (Component: any) => forwardRef((props, outerRef) => {
       name: '',
       value: '',
       onChange: (event: any) => {},
+      type: 'text',
       ...props,
     } 
     
-    const { models = [], name, value, onChange, ...other } = p;
+    const { models = [], name, value, onChange, type, ...other } = p;
 
     const [modelValue, setModelValue] = useMemo(() => models, [models])
     
@@ -28,9 +29,26 @@ const withModel = (Component: any) => forwardRef((props, outerRef) => {
           if(typeof onChange === 'function') onChange(event)
     }, [onChange])
 
+    // 清空内容函数
+    const cleanContent = () :void => {
+      if (setModelValue) {
+          const setValue = setModelValue as Function;
+          setValue(type.includes('number') ? null : '');
+      }
+    }
+
+    // 
+    const ot = {
+      type,
+      cleanContent,
+      ...other
+    }
+
   return (
     <Component
-      {...other}
+      {
+        ...ot
+      }
       ref={outerRef}
       name={name}
       value={modelValue !== undefined ? modelValue : value}
