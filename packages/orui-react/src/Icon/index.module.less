@@ -1,0 +1,161 @@
+
+@font-face {
+    font-family: 'iconfont';
+    src: url('./assets/iconfont.woff2?t=1667478618495') format('woff2'),
+        url('./assets/iconfont.woff?t=1667478618495') format('woff'),
+        url('./assets/iconfont.ttf?t=1667478618495') format('truetype');
+}
+
+// 基础样式
+.o-icon{
+    font-family: iconfont !important;
+    font-size: 1em;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #8a8a8a;
+}
+
+// 旋转
+.o-icon-spin{
+    animation: icon-spin 1s linear infinite;
+}
+
+@keyframes icon-spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+// 图标
+
+.o-icon-loading::before{
+    content: '\e891';
+}
+.o-icon-closeFill::before{
+    content: '\e6a6';
+}
+.o-icon-close::before{
+    content: '\e6a7';
+}
+.o-icon-eye::before{
+    content: '\e636';
+}
+.o-icon-eyeClose::before{
+    content: '\e8ff';
+}
+.o-icon-down::before{
+    content: '\e600';
+}
+.o-icon-top::before{
+    content: '\e602';
+}
+.o-icon-left::before{
+    content: '\e601';
+}
+.o-icon-right::before{
+    content: '\e603';
+}
+.o-icon-findUser::before{
+    content: '\e604';
+}
+.o-icon-addUser::before{
+    content: '\e605';
+}
+.o-icon-roundTop::before{
+    content: '\e606';
+}
+.o-icon-roundDown::before{
+    content: '\e607';
+}
+.o-icon-roundLeft::before{
+    content: '\e608';
+}
+.o-icon-roundRight::before{
+    content: '\e608';
+    transform: rotate(180deg);
+}
+.o-icon-circleTop::before{
+    content: '\e60b';
+}
+.o-icon-circleDown::before{
+    content: '\e60c';
+}
+.o-icon-circleLeft::before{
+    content: '\e60a';
+    transform: rotate(-180deg);
+}
+.o-icon-circleRight::before{
+    content: '\e60a';
+}
+.o-icon-circleAdd::before{
+    content: '\e609';
+}
+.o-icon-arrowLeft::before{
+    content: '\e601';
+}
+.o-icon-delete::before{
+    content: '\e60d';
+}
+.o-icon-edit::before{
+    content: '\e60e';
+}
+.o-icon-start::before{
+    content: '\e733';
+}
+.o-icon-semistar::before{
+    content: '\e6f0';
+}
+.o-icon-startFill::before{
+    content: '\ec43';
+}
+.o-icon-userLine::before{
+    content: '\e655';
+}
+.o-icon-message::before{
+    content: '\e86f';
+}
+.o-icon-setting::before{
+    content: '\e892';
+}
+.o-icon-user::before{
+    content: '\eb24';
+}
+.o-icon-reduce::before{
+    content: '\e60f';
+}
+.o-icon-arrowRight::before{
+    content: '\e623';
+}
+.o-icon-arrowLeft::before{
+    content: '\e623';
+    transform: rotate(-180deg);
+}
+.o-icon-arrowTop::before{
+    content: '\e623';
+    transform: rotate(-90deg);
+}
+.o-icon-arrowDwon::before{
+    content: '\e623';
+    transform: rotate(90deg);
+}
+.o-icon-add::before{
+    content: '\e61f';
+}
+.o-icon-circlereduce::before{
+    content: '\e8b1';
+}
+.o-icon-search::before{
+    content: '\e8b9';
+}
+.o-icon-circleReduceFill::before{
+    content: '\e8c5';
+}
+.o-icon-circleMessage::before{
+    content: '\e817';
+}
+
+
+

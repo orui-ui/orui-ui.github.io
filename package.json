@@ -1,6 +1,6 @@
 {
   "private": true,
-  "name": "orange-ui",
+  "name": "orui-ui",
   "version": "1.0.0",
   "scripts": {
     "start": "dumi dev",

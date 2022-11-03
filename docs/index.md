@@ -1,7 +1,7 @@
 ---
 hero:
-  title: orange-ui
-  desc: orange-ui 一款开箱即用的ui组件库
+  title: orui-ui
+  desc: orui-ui 一款开箱即用的ui组件库
   actions:
     - text: 开始
       link: /components
@@ -18,7 +18,10 @@ features:
   - icon: https://t9.baidu.com/it/u=2085483568,1490150191&fm=74&app=80&size=f256,256&n=0&f=PNG?sec=1667149200&t=d66ce57516b608a4ed49ced9bfb3bbd0
     title: TypeScript
     desc: 使用TypeScript开发
-footer: Open-source MIT Licensed | Copyright © 2022<br />Powered by [dumi](https://d.umijs.org)
+  - icon: data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0xMS41IC0xMC4yMzE3NCAyMyAyMC40NjM0OCI+CiAgPHRpdGxlPlJlYWN0IExvZ288L3RpdGxlPgogIDxjaXJjbGUgY3g9IjAiIGN5PSIwIiByPSIyLjA1IiBmaWxsPSIjNjFkYWZiIi8+CiAgPGcgc3Ryb2tlPSIjNjFkYWZiIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIi8+CiAgICA8ZWxsaXBzZSByeD0iMTEiIHJ5PSI0LjIiIHRyYW5zZm9ybT0icm90YXRlKDYwKSIvPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIiB0cmFuc2Zvcm09InJvdGF0ZSgxMjApIi8+CiAgPC9nPgo8L3N2Zz4K
+    title: React
+    desc: 基于 React 库
+footer: Open-source MIT Licensed | Copyright © 2022<br />
 ---
 
 ## 网站快速成型工具库

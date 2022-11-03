@@ -1,7 +1,7 @@
 ---
 hero:
-  title: orange-ui
-  desc: orange-ui An out of the box ui component library
+  title: orui-ui
+  desc: orui-ui An out of the box ui component library
   actions:
     - text: start
       link: /components/button
