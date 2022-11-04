@@ -11,7 +11,7 @@
 
 </div>
 
-A high-performance, lightweight UI component library for quickly building React applications.
+一款用于快速构建React应用程序的高性能、轻量级UI组件库。
 
  <!-- <img src="https://img.shields.io/github/stars/fengxinhhh/concis" alt="stars"> -->
 <img src="https://img.shields.io/badge/react-v18.0.0%2B-%23407fbc" alt="react">
@@ -21,7 +21,7 @@ A high-performance, lightweight UI component library for quickly building React 
 
 <div align="center">
 
-English | [简体中文](./README.zh-CN.md)
+[English](./README.md) | 简体中文
 
 </div>
 
@@ -33,9 +33,9 @@ English | [简体中文](./README.zh-CN.md)
 
 ## TypeScript based
 
-All components are written in `TypeScript`
+所有组件都基于 `TypeScript` 编写
 
-# install
+# 安装
 
 [npmjs package](https://www.npmjs.com/package/orui-ui)
 
