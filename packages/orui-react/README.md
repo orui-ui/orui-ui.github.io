@@ -42,6 +42,6 @@ yarn add orui-ui
 
 [document address](https://xiaoruil.github.io)
 
-[github](https://github.com/xiaoruil/xiaoruil.github.io/master)
+[github](https://github.com/xiaoruil/xiaoruil.github.io/tree/master)
 
 [gitee](https://gitee.com/xiaoruil/orui-ui)
