@@ -46,8 +46,8 @@ yarn add orui-ui
 
 # 文档地址
 
-[文档地址](xiaoruil.github.io)
+[文档地址](https://xiaoruil.github.io)
 
-[github](https://github.com/xiaoruil/xiaoruil.github.io)
+[github](https://github.com/xiaoruil/xiaoruil.github.io/master)
 
 [gitee](https://gitee.com/xiaoruil/orui-ui)
