@@ -1,8 +1,8 @@
 {
-    "extends": "../../tsconfig.json",
-    "compilerOptions": {
-      "rootDir": "src"
-    }
-  }
-  
-  
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "rootDir": "src"
+  },
+  "exclude": ["node_modules", "src/**/demo", "src/**/**.md"],
+  "include": ["src/**/*"]
+}

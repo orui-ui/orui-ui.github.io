@@ -1,21 +1,29 @@
 {
   "name": "orui-ui",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "一款用于快速构建React应用程序的高性能、轻量级UI组件库。",
   "homepage": "https://github.com/xiaoruil/xiaoruil.github.io | https://gitee.com/xiaoruil/orui-ui",
   "bugs": {
     "url": "https://github.com/xiaoruil/xiaoruil.github.io | https://gitee.com/xiaoruil/orui-ui",
     "email": "3399251596@qq.com"
   },
+  "keywords": [
+    "ui","react","组件","好用"
+  ],
   "engines": {},
   "author": {
     "name": "Rui Xiao",
     "email": "3399251596@qq.com"
   },
-  "main": "index.js",
+  "main": "./src/index.js",
   "scripts": {
+    "build": "father build",
+    "deploy": "npm run docs:build && npm run docs:deploy",
+    "prettier": "prettier --write \"**/*.{js,jsx,tsx,ts,less,md,json}\"",
+    "test:coverage": "umi-test --coverage",
+    "prepublishOnly": "npm run build",
+    "release": "npm publish",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
   "license": "ISC"
 }

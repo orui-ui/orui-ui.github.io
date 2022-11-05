@@ -7,6 +7,8 @@ import babel from 'rollup-plugin-babel';
 import { terser } from 'rollup-plugin-terser';
 import { uglify } from 'rollup-plugin-uglify';
 import copy from 'rollup-plugin-copy';
+import postcss from 'rollup-plugin-postcss';
+import autoprefixer from 'autoprefixer';
 
 export default {
   input: ['./src/index.ts'],
@@ -28,7 +30,7 @@ export default {
     },
   ],
   plugins: [
-    typescript(), 
+    typescript(),
     less({ output: './web-react-mobile/style/index.css' }),
     clear({
       targets: ['web-react'],
@@ -37,6 +39,12 @@ export default {
     commonjs(),
     babel({
       exclude: 'node_modules/**',
+      // [
+      //   // 'node_modules/**',
+      //   // 'src/**/demo/*.ts',
+      //   // 'src/**/*-api.ts',
+      //   // 'src/**/*.md'
+      // ],
       runtimeHelpers: true,
     }),
     terser(),
@@ -44,7 +52,15 @@ export default {
     copy({
       targets: [{ src: '../../scripts/globalStyle/compiled-colors.less', dest: 'web-react/style' }],
     }),
+    postcss({
+      plugins: [autoprefixer()],
+      use: {
+        sass: null,
+        stylus: null,
+        less: { javascriptEnabled: true },
+      },
+      extract: true,
+    }),
   ],
   external: ['react', 'react-dom'],
 };
-
