@@ -11,18 +11,8 @@ import postcss from 'rollup-plugin-postcss';
 import autoprefixer from 'autoprefixer';
 
 export default {
-  input: ['./src/index.ts'],
+  input: ['./packages/orui-react/src/index.ts'],
   output: [
-    {
-      file: 'web-react-mobile/cjs.js',
-      format: 'cjs',
-      name: 'cjs.js',
-    },
-    {
-      file: 'web-react-mobile/umd.js',
-      format: 'umd',
-      name: 'umd.js',
-    },
     {
       file: 'web-react-mobile/index.js',
       format: 'es',
@@ -41,9 +31,9 @@ export default {
       // exclude: 'node_modules/**',
       exclude: [
         'node_modules/**',
-        'src/**/demo/*',
-        'src/**/*-api.tsx',
-        'src/**/*.md'
+        'packages/**/src/**/demo/*',
+        'packages/**/src/**/*-api.tsx',
+        'packages/**/src/**/*.md'
       ],
       runtimeHelpers: true,
     }),

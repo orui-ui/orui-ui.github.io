@@ -15,9 +15,9 @@
     "name": "Rui Xiao",
     "email": "3399251596@qq.com"
   },
-  "main": "./src/index.js",
+  "main": "./bin/index.js",
   "scripts": {
-    "build": "father build",
+    "build": " rollup ./src/index.ts --dir bin",
     "deploy": "npm run docs:build && npm run docs:deploy",
     "prettier": "prettier --write \"**/*.{js,jsx,tsx,ts,less,md,json}\"",
     "test:coverage": "umi-test --coverage",

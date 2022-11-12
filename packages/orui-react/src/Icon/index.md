@@ -15,7 +15,7 @@ orui-ui 内置大量图标。
 
 ### 组件集合
 
-
+<code src="./demo/index-exhibition.tsx" inline />
 
 ### 基础用法
 
@@ -25,5 +25,3 @@ orui-ui 内置大量图标。
 <!-- 参数说明 -->
 
 <API src="./index.tsx" />
-
-
