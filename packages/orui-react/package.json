@@ -8,7 +8,10 @@
     "email": "3399251596@qq.com"
   },
   "keywords": [
-    "ui","react","组件","好用"
+    "ui",
+    "react",
+    "组件",
+    "好用"
   ],
   "engines": {},
   "author": {
@@ -16,12 +19,14 @@
     "email": "3399251596@qq.com"
   },
   "files": [
-    "bin","packages.json", "README.md"
+    "bin",
+    "packages.json",
+    "README.md"
   ],
-"main": "bin/index.ts",
-"module": "bin/index.js",
-"typings": "bin/index.d.ts",
-"type": "module",
+  "main": "bin/index.ts",
+  "module": "bin/index.js",
+  "typings": "bin/index.d.ts",
+  "type": "module",
   "scripts": {
     "build": " rollup -c",
     "prepublishOnly": "npm run build",
@@ -36,5 +41,8 @@
     "> 1%",
     "iOS 7",
     "last 3 iOS versions"
-  ]
+  ],
+  "dependencies": {
+    "rollup-plugin-styles": "^4.0.0"
+  }
 }

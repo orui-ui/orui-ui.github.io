@@ -1,5 +1,5 @@
 import typescript from 'rollup-plugin-typescript2';
-// import less from 'rollup-plugin-less';
+import less from 'rollup-plugin-less';
 import clear from 'rollup-plugin-clear';
 import resolve from 'rollup-plugin-node-resolve';
 import commonjs from 'rollup-plugin-commonjs';
@@ -7,8 +7,9 @@ import babel from 'rollup-plugin-babel';
 import { terser } from 'rollup-plugin-terser';
 // import { uglify } from 'rollup-plugin-uglify';
 import copy from 'rollup-plugin-copy';
-import postcss from 'rollup-plugin-postcss';
+// import postcss from 'rollup-plugin-postcss';
 import autoprefixer from 'autoprefixer';
+// import styles from 'rollup-plugin-styles';
 import path from "path";
 
 import pkg from "./package.json";
@@ -45,14 +46,18 @@ export default {
       ],
       // runtimeHelpers: true,
     }),
+    less({
+      output: './bin/style/index.css'
+    }),
+    autoprefixer(),
     terser(),
     // uglify(),
     copy({
-      targets: [{ src: './src/Icon/assets', dest: './bin/Icon/' }],
+      targets: [{ src: './src/Icon/assets', dest: './bin/style/' }],
     }),
-    postcss({
-      plugins: [autoprefixer()],
-    }),
+    // postcss({
+    //   plugins: [autoprefixer()],
+    // }),
   ],
   external: ['react', 'react-dom'],
 };
