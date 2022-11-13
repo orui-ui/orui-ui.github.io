@@ -1,8 +1,37 @@
 {
   "extends": "../../tsconfig.json",
   "compilerOptions": {
-    "rootDir": "src"
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "jsx": "react",
+    "esModuleInterop": true,
+    "types": ["jest"],
+    "strict": true,
+    "skipLibCheck": true,
+    "declaration": true,
+    "outDir": "bin",
+    "declarationDir": "bin",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": false,
+    "noFallthroughCasesInSwitch": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
   },
-  "exclude": ["node_modules", "src/**/demo", "src/**/**.md"],
-  "include": ["src/**/*"]
+  "include": [
+    "src"
+  ],
+  "exclude": [
+      "node_modules",
+      "src/**/demo/**",
+      "src/**/*-api.tsx",
+      "src/**/*.md"
+  ]
 }

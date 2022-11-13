@@ -15,15 +15,26 @@
     "name": "Rui Xiao",
     "email": "3399251596@qq.com"
   },
-  "main": "./bin/index.js",
+  "files": [
+    "bin","packages.json", "README.md"
+  ],
+"main": "bin/index.ts",
+"module": "bin/index.js",
+"typings": "bin/index.d.ts",
+"type": "module",
   "scripts": {
-    "build": " rollup ./src/index.ts --dir bin",
-    "deploy": "npm run docs:build && npm run docs:deploy",
-    "prettier": "prettier --write \"**/*.{js,jsx,tsx,ts,less,md,json}\"",
-    "test:coverage": "umi-test --coverage",
+    "build": " rollup -c",
     "prepublishOnly": "npm run build",
     "release": "npm publish",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "license": "ISC"
+  "license": "ISC",
+  "browserslist": [
+    "defaults",
+    "not ie < 8",
+    "last 2 versions",
+    "> 1%",
+    "iOS 7",
+    "last 3 iOS versions"
+  ]
 }
