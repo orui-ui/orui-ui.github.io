@@ -1,7 +1,7 @@
 
 
 
-# 安装
+# 安装 Install
 
 ```bash
 
