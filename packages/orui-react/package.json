@@ -19,7 +19,7 @@
     "email": "3399251596@qq.com"
   },
   "files": [
-    "bin"
+    "bin", "package.json", "README.md"
   ],
   "main": "bin/index.ts",
   "module": "bin/index.js",
