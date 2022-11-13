@@ -33,22 +33,13 @@
     "release": "npm publish"
   },
   "files": [
-    "bin"
+    "bin", "packages.json", "README.md"
   ],
   "main": "bin/index.ts",
   "module": "bin/index.js",
   "typings": "bin/index.d.ts",
-  "gitHooks": {
-    "pre-commit": "lint-staged"
-  },
-  "lint-staged": {
-    "*.{js,jsx,less,md,json}": [
-      "prettier --write"
-    ],
-    "*.ts?(x)": [
-      "prettier --parser=typescript --write"
-    ]
-  },
+  "type": "module",
+  
   "dependencies": {
     "lerna": "^6.0.1",
     "react": "^18.0.0"
@@ -70,5 +61,13 @@
   },
   "workspaces": [
     "packages/*"
+  ],
+  "browserslist": [
+    "defaults",
+    "not ie < 8",
+    "last 2 versions",
+    "> 1%",
+    "iOS 7",
+    "last 3 iOS versions"
   ]
 }

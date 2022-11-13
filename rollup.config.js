@@ -5,25 +5,38 @@ import resolve from 'rollup-plugin-node-resolve';
 import commonjs from 'rollup-plugin-commonjs';
 import babel from 'rollup-plugin-babel';
 import { terser } from 'rollup-plugin-terser';
-import { uglify } from 'rollup-plugin-uglify';
+// import { uglify } from 'rollup-plugin-uglify';
 import copy from 'rollup-plugin-copy';
 import postcss from 'rollup-plugin-postcss';
-import autoprefixer from 'autoprefixer';
+import autoprefixer from 'autoprefixer'
+import path from "path";
+// import styles from 'rollup-plugin-styles';
+
+import pkg from "./package.json";
 
 export default {
   input: ['./packages/orui-react/src/index.ts'],
   output: [
     {
-      file: 'web-react-mobile/index.js',
-      format: 'es',
-      name: 'index.js',
+       // 出口文件
+       dir: path.dirname(pkg.module),
+       format: "es", // es模块导出，支持按需加载
+       name: pkg.name,
+       exports: "named", // 指定导出模式（自动、默认、命名、无）
+       preserveModules: true, // 保留模块结构
+       preserveModulesRoot: "src", // 将保留的模块放在根级别的此路径下
     },
   ],
   plugins: [
-    typescript(),
-    less({ output: './web-react-mobile/style/index.css' }),
+    typescript({
+      tsconfig: './tsconfig.json'
+    }),
+    less({
+      output: './bin/style/index.css'
+    }),
+    autoprefixer(),
     clear({
-      targets: ['web-react'],
+      targets: ['bin'],
     }),
     resolve(),
     commonjs(),
@@ -38,20 +51,12 @@ export default {
       runtimeHelpers: true,
     }),
     terser(),
-    uglify(),
+    // uglify(),
     copy({
-      targets: [{ src: '../../scripts/globalStyle/compiled-colors.less', dest: 'web-react/style' }],
+      targets: [{ src: './packages/orui-react/src/Icon/assets', dest: './bin/style/' }],
     }),
     postcss({
       plugins: [autoprefixer()],
-      use: {
-        sass: null,
-        stylus: null,
-        less: { 
-          javascriptEnabled: true ,
-        },
-      },
-      extract: true,
     }),
   ],
   external: ['react', 'react-dom'],
