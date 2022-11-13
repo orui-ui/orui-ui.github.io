@@ -3,6 +3,6 @@ export default {
   esm: {
     input: 'src',
     transformer: 'babel', // 默认使用 babel 以提供更好的兼容性
-    output: 'lib',
+    output: 'bin',
   },
 };

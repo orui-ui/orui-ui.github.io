@@ -5,11 +5,8 @@ import resolve from 'rollup-plugin-node-resolve';
 import commonjs from 'rollup-plugin-commonjs';
 import babel from 'rollup-plugin-babel';
 import { terser } from 'rollup-plugin-terser';
-// import { uglify } from 'rollup-plugin-uglify';
 import copy from 'rollup-plugin-copy';
-// import postcss from 'rollup-plugin-postcss';
 import autoprefixer from 'autoprefixer';
-// import styles from 'rollup-plugin-styles';
 import path from "path";
 
 import pkg from "./package.json";
@@ -20,8 +17,10 @@ export default {
     {
       // 出口文件
       dir: path.dirname(pkg.module),
+      // dir: path.dirname('./bin/index.js'),
       format: "es", // es模块导出，支持按需加载
       name: pkg.name,
+      // name: 'orui-ui',
       exports: "named", // 指定导出模式（自动、默认、命名、无）
       preserveModules: true, // 保留模块结构
       preserveModulesRoot: "src", // 将保留的模块放在根级别的此路径下
@@ -51,13 +50,9 @@ export default {
     }),
     autoprefixer(),
     terser(),
-    // uglify(),
     copy({
       targets: [{ src: './src/Icon/assets', dest: './bin/style/' }],
     }),
-    // postcss({
-    //   plugins: [autoprefixer()],
-    // }),
   ],
   external: ['react', 'react-dom'],
 };

@@ -18,7 +18,7 @@ interface IconProps {
     name: String;
     /**
      * @description 图标大小
-     * @default 2em
+     * @default 1.5em
      */
     size?: String | Number;
     /**
@@ -42,7 +42,7 @@ const Icon : FC<IconProps> = memo ( props => {
     const {className, style, name, size, spin, color, onClick } = props;
 
     // 大小
-    let iconSize = '2em';
+    let iconSize = '1.5em';
     if(size !== undefined){
         if(typeof size === "number"){
             iconSize = `${size}em`

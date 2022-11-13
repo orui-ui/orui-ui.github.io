@@ -42,7 +42,7 @@ export default () => {
                 padding: '20px',
                 border: '1px solid #ccc'
               }} onClick={() => onclickExecCommand(key)}>
-                <Icon name={key}></Icon>
+                <Icon name={key} size={2}></Icon>
                 <br />
                 <span>{key}</span>
               </li>
