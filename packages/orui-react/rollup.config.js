@@ -10,6 +10,7 @@ import autoprefixer from 'autoprefixer';
 import path from "path";
 
 import pkg from "./package.json";
+// const pkg = require('./package.json')
 
 export default {
   input: ['./src/index.ts'],
