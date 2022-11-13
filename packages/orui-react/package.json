@@ -1,6 +1,6 @@
 {
   "name": "orui-ui",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "一款用于快速构建React应用程序的高性能、轻量级UI组件库。",
   "homepage": "https://github.com/xiaoruil/xiaoruil.github.io | https://gitee.com/xiaoruil/orui-ui",
   "bugs": {
@@ -39,5 +39,8 @@
     "> 1%",
     "iOS 7",
     "last 3 iOS versions"
-  ]
+  ],
+  "dependencies": {
+    
+  }
 }

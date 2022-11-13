@@ -1,7 +1,7 @@
 {
   "private": false,
   "name": "orui-ui",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "一款用于快速构建React应用程序的高性能、轻量级UI组件库。",
   "homepage": "https://github.com/xiaoruil/xiaoruil.github.io | https://gitee.com/xiaoruil/orui-ui",
   "bugs": {
@@ -41,7 +41,14 @@
   "type": "module",
   "dependencies": {
     "lerna": "^6.0.1",
-    "react": "^18.0.0"
+    "react": "^18.0.0",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-clear": "^2.0.7",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-copy": "^3.4.0",
+    "rollup-plugin-less": "^1.1.3",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-terser": "^7.0.2"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^5.15.1",
@@ -56,6 +63,7 @@
     "postcss": "^8.4.18",
     "prettier": "^2.2.1",
     "rollup-plugin-postcss": "^4.0.2",
+    "rollup-plugin-typescript2": "^0.34.1",
     "yorkie": "^2.0.0"
   },
   "workspaces": [
