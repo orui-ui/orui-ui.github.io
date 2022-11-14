@@ -2,7 +2,7 @@
 
 <div algin="center" >
 
-<img width="100" height="100" src="https://taomo.tech/tlgt/img/orui-ui-logo.png" />
+<img width="100" height="100" src="https://foruda.gitee.com/avatar/1668427357754256928/10923655_orui-ui_1668427357.png!avatar100" />
 
 <h1 style="font-size: 4em">orui-ui</h1>
 
@@ -40,8 +40,8 @@ yarn add orui-ui
 
 # document address
 
-[document address](https://xiaoruil.github.io)
+[document address](https://orui-ui.github.io)
 
-[github](https://github.com/xiaoruil/xiaoruil.github.io/tree/master)
+[github](https://github.com/orui-ui/orui-ui.github.io/tree/master)
 
-[gitee](https://gitee.com/xiaoruil/orui-ui)
+[gitee](https://gitee.com/orui-ui/orui-ui)

@@ -1,0 +1,321 @@
+.o-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: 1px solid #ccc;
+  color: #999999;
+}
+.o-button:hover {
+  color: #50b7c1;
+  border: 1px solid #50b7c1;
+}
+.o-button:disabled {
+  color: #999999;
+  cursor: no-drop;
+  border: 1px solid transparent;
+}
+.o-button-radius {
+  border-radius: 0.5em;
+}
+.o-button-small {
+  min-width: 2em;
+  min-height: 2em;
+}
+.o-button-middle {
+  min-width: 4em;
+  min-height: 3em;
+}
+.o-button-large {
+  min-width: 6em;
+  min-height: 4em;
+}
+.o-button-primary {
+  background: #409eff;
+  border: 1px solid #409eff;
+  color: white;
+}
+.o-button-primary:hover {
+  color: white;
+  background: rgba(64, 158, 255, 0.8);
+  border: 1px solid #409eff;
+}
+.o-button-primary:disabled {
+  color: white;
+  cursor: no-drop;
+  background: rgba(64, 158, 255, 0.6);
+  border: 1px solid transparent;
+}
+.o-button-success {
+  background: #71bd71;
+  border: 1px solid #71bd71;
+  color: white;
+}
+.o-button-success:hover {
+  color: white;
+  background: rgba(113, 189, 113, 0.8);
+  border: 1px solid #71bd71;
+}
+.o-button-success:disabled {
+  color: white;
+  cursor: no-drop;
+  background: rgba(113, 189, 113, 0.6);
+  border: 1px solid transparent;
+}
+.o-button-warning {
+  background: #e6a23c;
+  border: 1px solid #e6a23c;
+  color: white;
+}
+.o-button-warning:hover {
+  color: white;
+  background: rgba(230, 162, 60, 0.8);
+  border: 1px solid #e6a23c;
+}
+.o-button-warning:disabled {
+  color: white;
+  cursor: no-drop;
+  background: rgba(230, 162, 60, 0.6);
+  border: 1px solid transparent;
+}
+.o-button-danger {
+  background: #f56c6c;
+  border: 1px solid #f56c6c;
+  color: white;
+}
+.o-button-danger:hover {
+  color: white;
+  background: rgba(245, 108, 108, 0.8);
+  border: 1px solid #f56c6c;
+}
+.o-button-danger:disabled {
+  color: white;
+  cursor: no-drop;
+  background: rgba(245, 108, 108, 0.6);
+  border: 1px solid transparent;
+}
+.o-button-text {
+  border: 0px solid transparent;
+  color: #909399;
+}
+.o-button-text:hover {
+  background: rgba(80, 183, 193, 0.2);
+  border: 0px solid transparent;
+}
+.o-button-text:disabled {
+  cursor: no-drop;
+  background: rgba(255, 255, 255, 0.6);
+  border: 0px solid transparent;
+}
+@font-face {
+  font-family: 'iconfont';
+  src: url('./assets/iconfont.woff2?t=1667478618495') format('woff2'), url('./assets/iconfont.woff?t=1667478618495') format('woff'), url('./assets/iconfont.ttf?t=1667478618495') format('truetype');
+}
+.o-icon {
+  font-family: iconfont !important;
+  font-size: 1em;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #8a8a8a;
+}
+.o-icon-spin {
+  animation: icon-spin 1s linear infinite;
+}
+@keyframes icon-spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.o-icon-loading::before {
+  content: '\e891';
+}
+.o-icon-closeFill::before {
+  content: '\e6a6';
+}
+.o-icon-close::before {
+  content: '\e6a7';
+}
+.o-icon-eye::before {
+  content: '\e636';
+}
+.o-icon-eyeClose::before {
+  content: '\e8ff';
+}
+.o-icon-down::before {
+  content: '\e600';
+}
+.o-icon-top::before {
+  content: '\e602';
+}
+.o-icon-left::before {
+  content: '\e601';
+}
+.o-icon-right::before {
+  content: '\e603';
+}
+.o-icon-findUser::before {
+  content: '\e604';
+}
+.o-icon-addUser::before {
+  content: '\e605';
+}
+.o-icon-roundTop::before {
+  content: '\e606';
+}
+.o-icon-roundDown::before {
+  content: '\e607';
+}
+.o-icon-roundLeft::before {
+  content: '\e608';
+}
+.o-icon-roundRight::before {
+  content: '\e608';
+  display: block;
+  transform: rotate(180deg);
+}
+.o-icon-circleTop::before {
+  content: '\e60b';
+}
+.o-icon-circleDown::before {
+  content: '\e60c';
+}
+.o-icon-circleLeft::before {
+  content: '\e60a';
+  display: block;
+  transform: rotate(-180deg);
+}
+.o-icon-circleRight::before {
+  content: '\e60a';
+}
+.o-icon-circleAdd::before {
+  content: '\e609';
+}
+.o-icon-delete::before {
+  content: '\e60d';
+}
+.o-icon-edit::before {
+  content: '\e60e';
+}
+.o-icon-start::before {
+  content: '\e733';
+}
+.o-icon-semistar::before {
+  content: '\e6f0';
+}
+.o-icon-startFill::before {
+  content: '\ec43';
+}
+.o-icon-userLine::before {
+  content: '\e655';
+}
+.o-icon-message::before {
+  content: '\e86f';
+}
+.o-icon-setting::before {
+  content: '\e892';
+}
+.o-icon-user::before {
+  content: '\eb24';
+}
+.o-icon-reduce::before {
+  content: '\e60f';
+}
+.o-icon-arrowRight::before {
+  content: '\e623';
+}
+.o-icon-arrowLeft::before {
+  content: '\e623';
+  display: block;
+  transform: rotate(-180deg);
+}
+.o-icon-arrowTop::before {
+  content: '\e623';
+  display: block;
+  transform: rotate(-90deg);
+}
+.o-icon-arrowDwon::before {
+  content: '\e623';
+  display: block;
+  transform: rotate(90deg);
+}
+.o-icon-add::before {
+  content: '\e61f';
+}
+.o-icon-circlereduce::before {
+  content: '\e8b1';
+}
+.o-icon-search::before {
+  content: '\e8b9';
+}
+.o-icon-circleReduceFill::before {
+  content: '\e8c5';
+}
+.o-icon-circleMessage::before {
+  content: '\e817';
+}
+.o-input {
+  display: flex;
+  align-items: center;
+  padding: 0.3em;
+  margin-top: 0.5em;
+  margin-left: 1em;
+  background-color: white;
+  overflow: hidden;
+}
+.o-input input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+}
+.o-input input:disabled {
+  background-color: #f5f5f5;
+  cursor: no-drop;
+}
+.o-input textarea {
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  border: none;
+  outline: none;
+  resize: none;
+}
+.o-input textarea:disabled {
+  background-color: #f5f5f5;
+  cursor: no-drop;
+}
+.o-input-border {
+  border: 1px solid #ccc;
+}
+.o-input-border-focus {
+  border: 1px solid #50b7c1;
+  box-shadow: 0px 0px 3px 0px #50b7c1;
+}
+.o-input-border-disabled {
+  background-color: #f5f5f5;
+}
+.o-input-small {
+  width: 12em;
+  height: 1.1em;
+}
+.o-input-small textarea {
+  max-height: 100%;
+  min-height: 100%;
+}
+.o-input-middle {
+  width: 14em;
+  height: 1.7em;
+}
+.o-input-middle textarea {
+  max-height: 100%;
+  min-height: 100%;
+}
+.o-input-large {
+  width: 16em;
+  height: 2em;
+}
+.o-input-large textarea {
+  max-height: 100%;
+  min-height: 100%;
+}
