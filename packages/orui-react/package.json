@@ -1,17 +1,17 @@
 {
   "name": "orui-ui",
-  "version": "1.0.3",
-  "description": "一款用于快速构建React应用程序的高性能、轻量级UI组件库。",
-  "homepage": "https://github.com/orui-ui/orui-ui.github.io/tree/master | https://gitee.com/orui-ui/orui-ui",
+  "version": "1.0.4",
+  "description": "A high-performance, lightweight UI component library for quickly building React applications.",
+  "homepage": "https://gitee.com/orui-ui/orui-ui",
   "bugs": {
-    "url": "https://github.com/orui-ui/orui-ui.github.io/tree/master | https://gitee.com/orui-ui/orui-ui",
+    "url": "https://gitee.com/orui-ui/orui-ui",
     "email": "3399251596@qq.com"
   },
   "keywords": [
     "ui",
     "react",
-    "组件",
-    "好用"
+    "components",
+    "reactComponents"
   ],
   "engines": {},
   "author": {
@@ -19,9 +19,11 @@
     "email": "3399251596@qq.com"
   },
   "files": [
+    "bin",
     "README.md",
     "README.zh-CN.md",
-    "package.json"
+    "package.json",
+    "LICENSE.md"
   ],
   "main": "bin/index.ts",
   "module": "bin/index.js",

@@ -17,7 +17,7 @@
 </center>
 
 
-## TypeScript based
+## 基于TypeScript
 
 所有组件都基于 `TypeScript` 编写
 
